@@ -1,0 +1,94 @@
+ //Veiculo
+ public class Veiculo{
+  private String marca;
+  public String placa;
+  public String modelo{
+  public Boolean novo;
+  public Decimal valorCompra =0;
+  public Decimal valorVenda= 0;
+  private Decimal valorComissaoCarro = 0;
+  private Decimal valorComissaoOutro = 0;
+  private Decimal valorbonusUsado = 0;
+  private Decimal valorbonusNovo = 0;
+      
+  //Encapsulamento de leitura
+   public Decimal getvalorComissaoCarro(){
+   return valorComissaoCarro;
+}
+    public void setvalorComissaoCarro(Decimal valorVenda, Decimal valorComissaoCarro){
+        valorVenda = (valorComissaoCarro *0.10){
+        this.valorComissaoCarro;
+    }
+   }
+    
+   public Decimal getvalorComissaoOutro(){
+       return valorComissaoOutro;
+   }
+     public void setvalorComissaoOutro(Decimal valorVenda, Decimal valorComissaoOutro){
+        valorVenda = (valorComissaoOutro *0.15){
+        this.valorComissaoOutro;
+    }
+   }
+   public Decimal getvalorbonusUsado(){
+       return valorbonusUsado;
+   }
+    public void setvalorbonusUsado(Decimal valorVenda, Decimal valorbonusUsado){
+        valorVenda + valorbonusUsado{
+        this.valorbonusUsado = valorbonusUsado;
+    }
+   }
+}
+   public Decimal getvalorbonusNovo(){
+       return valorbonusOutro;
+   }
+    public void setvalorbonusONovo(Decimal valorVenda, Decimal valorbonusOutro){
+        valorVenda + valorbonusUsado{
+        this.valorbonusUsado = valorbonusUsado;
+    }
+   }
+    public Veiculo{}
+    public Veiculo(String placa, Integer anoFabricacao, Decimal valorCompra){
+      
+        this.valorComissaoCarro;
+           this.valorComissaoOutro;
+           this.valorbonusNovo;
+           this.valorbonusUsado;
+    public void desvalorizacao(){
+     valorVenda -= (200 * (Date.today().year() - anoFabricacao)) - valorCompra;
+    }
+    public void exibirDadosProprietarios(){
+        System.debug('');
+    }
+    public void valorComissaoCarro(){
+              valorVenda = (0.10 * this.valorCompra);
+           }
+    public void valorComissaoOutro(){
+         valorVenda = (0.15 * this.valorCompra);
+    }
+    public void valorbonusNovo(){
+         valorVenda = this.valorCompra + 300;
+    }
+    public void valorbonusUsado(){
+        valorVenda = this.valorCompra + 200;
+    }
+    }
+    //Funcionario
+    ublic class Vendedor{
+  public String nome;
+  public String rg;
+  public Integer cpf; 
+  public Integer matricula;
+  public String email;
+  public String telefone;
+  
+ 
+public void venderVeiculo(Veiculo veiculo, Cliente cliente, Vendedor vendedor){
+        System.debug('Veículo de placa ' + veiculo.placa + ' foi vendido pelo vendedor(a): ' + nome);
+        System.debug('Proprietário anterior: ' + veiculo.proprietarioAnterior);
+        System.debug('Novo proprietário: ' + cliente.nome);
+        System.debug('Endereço: ' + cliente.endereco);
+        System.debug('Telefone: ' + cliente.telefone);
+        veiculo.desvalorizacao();
+        System.debug('Valor da venda: ' + veiculo.valorVenda);
+ }
+}
